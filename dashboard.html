@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SpendWise AI Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+  <aside class="sidebar">
+
+    <div class="logo">
+      <i class="fa-solid fa-microchip"></i>
+      <h2>SpendWise AI</h2>
+    </div>
+
+    <ul class="menu">
+      <li class="active">
+        <i class="fa-solid fa-chart-line"></i>
+        Dashboard
+      </li>
+
+      <li>
+        <i class="fa-solid fa-plus"></i>
+        New Audit
+      </li>
+
+      <li>
+        <i class="fa-solid fa-file"></i>
+        Reports
+      </li>
+
+      <li>
+        <i class="fa-solid fa-chart-pie"></i>
+        Analytics
+      </li>
+
+      <li>
+        <i class="fa-solid fa-gear"></i>
+        Settings
+      </li>
+    </ul>
+
+    <div class="sidebar-bottom">
+
+        <button id="logoutBtn" class="logout-btn">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </button>
+
+    </div>
+
+  </aside>
+
+  <!-- MAIN CONTENT -->
+
+  <main class="main-content">
+
+    <!-- TOP NAV -->
+
+    <header class="topbar">
+        <button id="menuToggle" class="menu-toggle">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+       <div>
+        <h1>AI Spend Audit Dashboard</h1>
+        <p>Analyze and optimize your AI infrastructure spending.</p>
+       </div>
+
+      <div class="top-actions">
+
+        <button class="icon-btn">
+          <i class="fa-regular fa-bell"></i>
+        </button>
+
+        <div class="profile">
+          <div class="avatar" id="userAvatar"></div>
+         <span id="dashboardUsername">User</span>
+        </div>
+
+      </div>
+
+    </header>
+
+    <!-- HERO CARDS -->
+
+    <section class="stats-grid">
+
+      <div class="stat-card">
+        <div class="card-icon purple">
+          <i class="fa-solid fa-wallet"></i>
+        </div>
+
+        <h3>Current Spend</h3>
+        <h2 id="currentSpend">$0</h2>
+        <p>Monthly AI expenses</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="card-icon blue">
+          <i class="fa-solid fa-rocket"></i>
+        </div>
+
+        <h3>Optimized Spend</h3>
+        <h2 id="optimizedSpend">$0</h2>
+        <p>Estimated optimized cost</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="card-icon green">
+          <i class="fa-solid fa-piggy-bank"></i>
+        </div>
+
+        <h3>Monthly Savings</h3>
+        <h2 id="monthlySavings">$0</h2>
+        <p>Potential reduction</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="card-icon orange">
+          <i class="fa-solid fa-calendar"></i>
+        </div>
+
+        <h3>Annual Savings</h3>
+        <h2 id="annualSavings">$0</h2>
+        <p>Projected yearly savings</p>
+      </div>
+
+    </section>
+
+    <!-- TOOL INPUT SECTION -->
+
+    <section class="dashboard-card">
+
+      <div class="section-header">
+
+        <div>
+          <h2>AI Spend Configuration</h2>
+          <p>Add your current AI tools and subscriptions.</p>
+        </div>
+
+        <button id="addToolBtn" class="primary-btn">
+          <i class="fa-solid fa-plus"></i>
+          Add Tool
+        </button>
+
+      </div>
+
+      <!-- TOOL CONTAINER -->
+
+      <div id="toolContainer">
+
+      </div>
+
+      <div class="generate-wrapper">
+        <button id="generateAuditBtn" class="generate-btn">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          Generate AI Audit
+        </button>
+      </div>
+
+    </section>
+
+    <!-- AI SUMMARY -->
+
+    <section class="dashboard-card ai-summary">
+
+      <div class="summary-icon">
+        <i class="fa-solid fa-brain"></i>
+      </div>
+
+      <div>
+
+        <span class="badge">AI ANALYSIS</span>
+
+        <h2>Executive Summary</h2>
+
+        <p id="summaryText">
+          Your AI spend insights will appear here after generating the audit.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- TOOL BREAKDOWN -->
+
+    <section class="breakdown-grid">
+
+      <!-- BREAKDOWN -->
+
+      <div class="dashboard-card">
+
+        <h2>Tool Breakdown</h2>
+
+        <div id="breakdownContainer">
+
+        </div>
+
+      </div>
+
+      <!-- RECOMMENDATIONS -->
+
+      <div class="dashboard-card">
+
+        <h2>Smart Recommendations</h2>
+
+        <div id="recommendationContainer">
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CHARTS -->
+
+    <section class="charts-grid">
+
+      <div class="dashboard-card">
+
+        <h2>Spend Distribution</h2>
+
+        <canvas id="pieChart"></canvas>
+
+      </div>
+
+      <div class="dashboard-card">
+
+        <h2>Cost Comparison</h2>
+
+        <canvas id="barChart"></canvas>
+
+      </div>
+
+    </section>
+
+    <!-- CREDIX CTA -->
+
+    <section class="credex-cta">
+
+      <h2>You Could Save Thousands On AI Costs</h2>
+
+      <p>
+        Credex helps companies access discounted enterprise AI credits
+        and optimize infrastructure spending.
+      </p>
+
+      <button class="consult-btn">
+        Book Free Consultation
+      </button>
+
+    </section>
+
+    <!-- LEAD CAPTURE -->
+
+    <section class="dashboard-card">
+
+      <div class="section-header">
+        <div>
+          <h2>Get Full Audit Report</h2>
+          <p>Receive your optimization roadmap by email.</p>
+        </div>
+      </div>
+
+      <form class="lead-form">
+
+        <input type="email" placeholder="Work Email">
+
+        <input type="text" placeholder="Company Name">
+
+        <input type="text" placeholder="Role">
+
+        <button type="submit" class="primary-btn">
+          Get Full Report
+        </button>
+
+      </form>
+
+    </section>
+
+
+  </main>
+
+  <!-- JS -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>

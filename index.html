@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="index.css" rel="stylesheet">
+    <!-- FONT AWESOME CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav_container">
+            <div class="nav_bar">
+                <a class="logo">Credex</a>
+                <div class="links">
+                    <a href="#Features">Features</a>
+                    <a href="#Dashboard">Dashboard</a>
+                    <a href="#Pricing">Pricing</a>
+                    <a href="#About">About</a>
+                    <a href="#Login">Login</a>
+                </div>
+                <!-- ADD THIS INSIDE nav_bar -->
+
+                    <div class="right_side">
+
+                        <a class="btn" href="Auth.html">Get Started</a>
+
+                        <div class="menu_icon" id="menuBtn">
+                            ☰
+                        </div>
+
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="introduction">
+                <h2>Manage Payments & Financial <br> <span>Workflows Smarter</span></h2>
+                <p>Track transactions, automate workflows, monitor invoices, and manage business finances with a powerful modern dashboard.</p>
+                
+                <div class="button">
+                    <button onclick="window.location.href='Auth.html'" >Get Started</button>
+                    <button>Live Demo</button>
+                </div>
+
+                <div class="values">
+                    <div class="users">
+                        <h3>10+</h3>
+                        <p>Users</p>
+                    </div>
+                    <div class="users">
+                        <h3>2M+</h3>
+                        <p>Transactions</p>
+                    </div>
+                    <div class="users">
+                        <h3>99.9%</h3>
+                        <p>Secure</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brands">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/960px-Stripe_Logo%2C_revised_2016.svg.png" alt="Stripe">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Visa_Inc._logo_%282021%E2%80%93present%29.svg/3840px-Visa_Inc._logo_%282021%E2%80%93present%29.svg.png" alt="Visa">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Razorpay_logo.svg" alt="Razorpay">
+        </section>
+
+        <section id="Features">
+            <div class="features">
+                <h2>Why Choose Credex?</h2>
+                <a>Everything you need to manage your business finances in one simple, powerful platform.</a>
+                <div class="f-cards">
+                    <div class="card">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h3>Smart Payments</h3>
+                        <p>Send and receive payments globally with instant settlement and competitive FX rates.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-robot"></i>
+                        <h3>AI Insights</h3>
+                        <p>Predictive analytics that help you forecast cash flow and identify spending trends.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-lock"></i>
+                        <h3>Bank-Grade Security</h3>
+                        <p>Your data is protected with 256-bit encryption and real-time fraud monitoring.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        <h3>Invoice Management</h3>
+                        <p>Create, customize, and automate invoices to get paid faster without the hassle.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <h3>Analytics Dashboard</h3>
+                        <p>Visualize your financial health with customizable charts and real-time reports.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Team Collaboration</h3>
+                        <p>Set roles, permissions, and approval workflows for your entire finance team.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Dashboard" class="dashboard_section">
+
+            <!-- HEADING -->
+
+            <div class="dashboard_intro">
+
+                <h1>Powerful Financial Dashboard Experience</h1>
+
+                <p>
+                    Monitor payments, analyze transactions, manage invoices,
+                    and track business growth with a modern real-time dashboard.
+                </p>
+
+            </div>
+
+            <!-- DASHBOARD -->
+
+            <section class="dashboard">
+
+                <!-- SIDEBAR -->
+
+                <div class="sidebar">
+
+                    <div class="logos">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h2>Credex</h2>
+                    </div>
+
+                    <div class="menu">
+
+                        <div class="menu_item active">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </div>
+
+                        <div class="menu_item">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>Analytics</span>
+                        </div>
+
+                        <div class="menu_item">
+                            <i class="fa-solid fa-wallet"></i>
+                            <span>Transactions</span>
+                        </div>
+
+                        <div class="menu_item">
+                            <i class="fa-solid fa-file-invoice"></i>
+                            <span>Invoices</span>
+                        </div>
+
+                        <div class="menu_item">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- MAIN CONTENT -->
+
+                <div class="main_dashboard">
+
+                    <div class="top_bar">
+
+                        <h1>Overview</h1>
+
+                        <div class="profile"></div>
+
+                    </div>
+
+                    <!-- STATS -->
+
+                    <div class="stats_cards">
+
+                        <div class="stat_card">
+                            <p>Total Revenue</p>
+                            <h2>$45,231.89</h2>
+                            <span>↑ +20.1%</span>
+                        </div>
+
+                        <div class="stat_card">
+                            <p>Subscriptions</p>
+                            <h2>+2350</h2>
+                            <span>↑ +180.1%</span>
+                        </div>
+
+                        <div class="stat_card">
+                            <p>Active Now</p>
+                            <h2>+573</h2>
+                            <span>↑ +19%</span>
+                        </div>
+
+                    </div>
+
+                    <!-- CHART -->
+
+                    <div class="chart_card">
+
+                        <div class="chart_top">
+                            <h2>Revenue History</h2>
+                            <p>Last 7 Days</p>
+                        </div>
+
+                        <div class="chart_line"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <section>
+            <div class="work">
+                <h2>How It Works</h2>
+                <a>Get started in minutes with our simple onboarding process.</a>
+                <div class="boxs">
+                    <div class="box">
+                        <h3>1</h3>
+                        <h4>Create Account</h4>
+                        <p>Sign up for free and verify your business details in just a few clicks.</p>
+                    </div>
+                    <div class="box">
+                        <h3>2</h3>
+                        <h4>Connect Workflow</h4>
+                        <p>Link your bank accounts and integrate with your existing payment gateways.</p>
+                    </div>
+                    <div class="box">
+                        <h3>3</h3>
+                        <h4>Track & Grow</h4>
+                        <p>Access real-time analytics, manage invoices, and watch your business grow.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="success">
+                <h2>Loved by Businesses</h2>
+                <a>See what our customers have to say about Credex.</a>
+                <div class="boxes">
+                    <div class="sub-boxes">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                            "Credex completely transformed how we manage business payments and analytics."
+                        </p>
+                        <div class="profile_box">
+                            <img src="https://i.pravatar.cc/100?img=12" alt="user">
+                            <div class="profile_info">
+                                <h4>Alex Morgan</h4>
+                                <span>CEO, TechFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-boxes">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                            "Credex completely transformed how we manage business payments and analytics."
+                        </p>
+                        <div class="profile_box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIYP7khs068Pjdc7QJ2UfwiEHaV2tHiMe2kw&s" alt="user">
+                            <div class="profile_info">
+                                <h4>Sarah Jenkins</h4>
+                                <span>Founder, Designify</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-boxes">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                            "Credex completely transformed how we manage business payments and analytics."
+                        </p>
+                        <div class="profile_box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTERfoWSBxLRDfZj1Eh6_TDPz8FegbMqtu-Ug&s" alt="user">
+                            <div class="profile_info">
+                                <h4>David Chen</h4>
+                                <span>CFO, SecureNet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Pricing" class="pricing_section">
+
+            <div class="pricing_heading">
+
+                <h1>Simple Pricing</h1>
+
+                <p>
+                    Choose the plan that fits your business needs.
+                </p>
+
+            </div>
+
+            <div class="pricing_cards">
+
+                <div class="pricing_card">
+
+                    <h3>Starter</h3>
+
+                    <h2>$0<span>/mo</span></h2>
+
+                    <p>Perfect for freelancers.</p>
+
+                    <ul>
+                        <li>✔ 1 User Account</li>
+                        <li>✔ Basic Analytics</li>
+                        <li>✔ 5 Invoices/mo</li>
+                        <li>✔ Email Support</li>
+                    </ul>
+
+                    <button>Start Free</button>
+
+                </div>
+
+                <div class="pricing_card active_card">
+
+                    <div class="tag">MOST POPULAR</div>
+
+                    <h3>Pro</h3>
+
+                    <h2>$29<span>/mo</span></h2>
+
+                    <p>For growing teams.</p>
+
+                    <ul>
+                        <li>✔ 5 User Accounts</li>
+                        <li>✔ Advanced Analytics</li>
+                        <li>✔ Unlimited Invoices</li>
+                        <li>✔ Priority Support</li>
+                        <li>✔ AI Insights</li>
+                    </ul>
+
+                    <button>Get Pro</button>
+
+                </div>
+
+                <div class="pricing_card">
+
+                    <h3>Enterprise</h3>
+
+                    <h2>$99<span>/mo</span></h2>
+
+                    <p>For large organizations.</p>
+
+                    <ul>
+                        <li>✔ Unlimited Users</li>
+                        <li>✔ Custom Reporting</li>
+                        <li>✔ Dedicated Manager</li>
+                        <li>✔ API Access</li>
+                        <li>✔ SSO Integration</li>
+                    </ul>
+
+                    <button>Contact Sales</button>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_logo">
+                <div class="logo">
+                    <h2>Credex</h2>
+                </div>
+                <p>
+                    The modern financial operating system for businesses
+                    of all sizes. Secure, fast, and reliable.
+                </p>
+            </div>
+            <div class="footer_links">
+                <h3>Product</h3>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Integrations</a>
+                <a href="#">Changelog</a>
+            </div>
+            <div class="footer_links">
+                <h3>Company</h3>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer_links">
+                <h3>Legal</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Security</a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="social_icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p>© 2026 Credex Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.querySelector(".links");
+
+        menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
