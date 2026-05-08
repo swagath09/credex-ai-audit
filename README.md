@@ -104,7 +104,13 @@ git clone https://github.com/yourusername/credex-ai-audit.git
 
 # Deployment
 
-The project is deployed using Vercel.
+# Live Demo
+
+https://credex-ai-audit.netlify.app/
+
+# GitHub Repository
+
+https://github.com/swagath09/credex-ai-audit
 
 ---
 
