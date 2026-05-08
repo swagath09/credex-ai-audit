@@ -25,7 +25,6 @@ body{
     box-shadow:0 20px 60px rgba(0,0,0,0.08);
 }
 
-/* LEFT */
 .left{
     flex:1;
     padding:70px;
@@ -192,8 +191,6 @@ button:hover{
     font-weight:700;
     cursor:pointer;
 }
-
-/* RIGHT */
 
 .right{
     flex:1;

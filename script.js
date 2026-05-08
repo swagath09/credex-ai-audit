@@ -22,8 +22,6 @@ if(loggedInUser){
 
 }
 
-/* LOGOUT */
-
 document
 .getElementById("logoutBtn")
 .addEventListener("click", () => {
@@ -33,8 +31,6 @@ document
     window.location.href = "Auth.html";
 
 });
-
-/* MOBILE SIDEBAR */
 
 const menuToggle =
 document.getElementById("menuToggle");
@@ -56,8 +52,6 @@ menuToggle.addEventListener("click", () => {
     }
 
 });
-
-/* CLOSE SIDEBAR WHEN CLICKING OUTSIDE */
 
 document.addEventListener("click", (e) => {
 
@@ -88,8 +82,6 @@ const tools = [
 
 let pieChart;
 let barChart;
-
-/* ADD TOOL */
 
 function addToolRow() {
 
@@ -139,17 +131,11 @@ function addToolRow() {
 
 }
 
-/* INITIAL ROW */
-
 addToolRow();
-
-/* ADD BUTTON */
 
 document
 .getElementById("addToolBtn")
 .addEventListener("click", addToolRow);
-
-/* GENERATE AUDIT */
 
 document
 .getElementById("generateAuditBtn")
@@ -198,8 +184,6 @@ function generateAudit(){
     let optimized = cost;
     let reason = "Your current plan is optimized.";
 
-    /* AI LOGIC */
-
     if(plan === "Enterprise" && seats < 10){
 
       optimized = cost * 0.6;
@@ -234,8 +218,6 @@ function generateAudit(){
     labels.push(tool);
     spendData.push(cost);
 
-    /* BREAKDOWN CARD */
-
     const breakdown = document.createElement("div");
 
     breakdown.classList.add("breakdown-card");
@@ -259,8 +241,6 @@ function generateAudit(){
     `;
 
     breakdownContainer.appendChild(breakdown);
-
-    /* RECOMMENDATION */
 
     if(savings > 0){
 
@@ -288,8 +268,6 @@ function generateAudit(){
   const annualSavings =
     monthlySavings * 12;
 
-  /* UPDATE HERO */
-
   document.getElementById("currentSpend")
   .innerText = `$${totalCurrent.toFixed(0)}`;
 
@@ -302,19 +280,13 @@ function generateAudit(){
   document.getElementById("annualSavings")
   .innerText = `$${annualSavings.toFixed(0)}`;
 
-  /* AI SUMMARY */
-
   document.getElementById("summaryText")
   .innerText =
   `Your organization is currently overspending by approximately $${monthlySavings.toFixed(0)} per month. We identified multiple optimization opportunities involving enterprise-tier plans, inactive seats, and inefficient AI infrastructure usage. Implementing these recommendations could significantly reduce operational AI costs annually.`;
 
-  /* CHARTS */
-
   renderCharts(labels, spendData, totalOptimized);
 
 }
-
-/* CHARTS */
 
 function renderCharts(labels, spendData, optimized){
 
@@ -380,10 +352,6 @@ function renderCharts(labels, spendData, optimized){
   });
 
 }
-
-/* =========================================
-   CREATE EXTRA PAGES
-========================================= */
 
 const extraPages = `
 
@@ -502,9 +470,6 @@ document
 .querySelector(".main-content")
 .insertAdjacentHTML("beforeend", extraPages);
 
-/* =========================================
-   TAB SWITCHING
-========================================= */
 const menuItems = document.querySelectorAll(".menu li");
 
 menuItems.forEach(item => {
@@ -512,8 +477,6 @@ menuItems.forEach(item => {
     item.addEventListener("click", () => {
 
         const text = item.innerText.trim();
-
-        /* IGNORE SETTINGS */
 
         if(text.includes("Settings")){
             return;
@@ -523,18 +486,12 @@ menuItems.forEach(item => {
 
         item.classList.add("active");
 
-        /* HIDE ALL PAGES */
-
         document.querySelectorAll(".tab-page")
         .forEach(page => {
             page.style.display = "none";
         });
 
-        /* HIDE DASHBOARD FIRST */
-
         hideDashboard();
-
-        /* PAGE SWITCH */
 
         if(text.includes("Dashboard")){
 
@@ -569,10 +526,6 @@ menuItems.forEach(item => {
 
 });
 
-/* =========================================
-   HIDE DASHBOARD
-========================================= */
-
 function hideDashboard(){
 
     document.querySelector(".stats-grid")
@@ -598,10 +551,6 @@ function hideDashboard(){
 
 }
 
-/* =========================================
-   SHOW DASHBOARD
-========================================= */
-
 function showDashboard(){
 
     document.querySelector(".stats-grid")
@@ -626,10 +575,6 @@ function showDashboard(){
     .style.display = "block";
 
 }
-
-/* =========================================
-   ANALYTICS CHART
-========================================= */
 
 let analyticsChart;
 

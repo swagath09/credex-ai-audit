@@ -6,7 +6,6 @@ function switchForm(){
     signupForm.classList.toggle('active');
 }
 
-
 signupForm.addEventListener('submit', function(e){
 
     e.preventDefault();
@@ -59,8 +58,6 @@ loginForm.addEventListener('submit', function(e){
         email === storedUser.email &&
         password === storedUser.password
     ){
-
-        /* SAVE USERNAME */
 
         localStorage.setItem(
             "loggedInUser",

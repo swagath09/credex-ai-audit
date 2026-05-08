@@ -353,11 +353,6 @@ html{
     transform: translateY(-5px);
     border-color: #3b82f6;
 }
-/* ========================= */
-/* FEATURES RESPONSIVE */
-/* ========================= */
-
-/* TABLET */
 
 @media(max-width:992px){
 
@@ -369,8 +364,6 @@ html{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-/* MOBILE */
 
 @media(max-width:768px){
 
@@ -419,8 +412,6 @@ html{
         font-size: 20px;
     }
 }
-
-/* SMALL MOBILE */
 
 @media(max-width:480px){
 
@@ -716,10 +707,6 @@ html{
     font-size: 16px;
 }
 
-/* ========================= */
-/* TABLET */
-/* ========================= */
-
 @media(max-width:992px){
 
     .boxs{
@@ -732,10 +719,6 @@ html{
         width: 300px;
     }
 }
-
-/* ========================= */
-/* MOBILE */
-/* ========================= */
 
 @media(max-width:768px){
 
@@ -838,14 +821,10 @@ html{
     border-color: rgba(59,130,246,0.3);
 }
 
-/* QUOTE ICON */
-
 .sub-boxes i{
     font-size: 30px;
     color: #3b82f6;
 }
-
-/* TEXT */
 
 .sub-boxes p{
     color: lightgrey;
@@ -853,8 +832,6 @@ html{
     font-size: 18px;
     font-style: italic;
 }
-
-/* PROFILE */
 
 .profile_box{
     display: flex;
@@ -889,10 +866,6 @@ html{
     font-size: 14px;
 }
 
-/* MOBILE */
-
-/* TABLET */
-
 @media(max-width:992px){
 
     .boxes{
@@ -901,8 +874,6 @@ html{
         padding: 50px;
     }
 }
-
-/* MOBILE */
 
 @media(max-width:768px){
 
@@ -926,16 +897,9 @@ html{
     }
 }
 
-/* PRICING SECTION */
-/* ========================= */
-/* PRICING SECTION */
-/* ========================= */
-
 .pricing_section{
     padding: 100px;
 }
-
-/* HEADING */
 
 .pricing_heading{
     text-align: center;
@@ -952,18 +916,12 @@ html{
     color: #94a3b8;
 }
 
-/* ========================= */
-/* PRICING CARDS */
-/* ========================= */
-
 .pricing_cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
     gap: 35px;
 }
-
-/* CARD */
 
 .pricing_card{
     width: 100%;
@@ -985,15 +943,11 @@ html{
     transform: translateY(-8px);
 }
 
-/* ACTIVE CARD */
-
 .active_card{
     border: 1px solid #3b82f6;
 
     box-shadow: 0 0 40px rgba(59,130,246,0.15);
 }
-
-/* TAG */
 
 .tag{
     position: absolute;
@@ -1012,8 +966,6 @@ html{
     font-size: 14px;
     font-weight: 700;
 }
-
-/* TEXT */
 
 .pricing_card h3{
     font-size: 22px;
@@ -1047,8 +999,6 @@ html{
     font-size: 16px;
 }
 
-/* LIST */
-
 .pricing_card ul{
     list-style: none;
 
@@ -1065,8 +1015,6 @@ html{
 
     color: #d1d5db;
 }
-
-/* BUTTON */
 
 .pricing_card button{
     width: 100%;
@@ -1092,10 +1040,6 @@ html{
 .pricing_card button:hover{
     transform: scale(1.03);
 }
-
-/* ========================= */
-/* RESPONSIVE */
-/* ========================= */
 
 @media(max-width:992px){
 
@@ -1123,17 +1067,11 @@ html{
     }
 }
 
-/* ========================= */
-/* FOOTER */
-/* ========================= */
-
 .footer{
     padding: 100px;
     background-color: #02223f;
     border-top: 1px solid rgba(255,255,255,0.08);
 }
-
-/* CONTAINER */
 
 .footer_container{
     display: grid;
@@ -1146,8 +1084,6 @@ html{
     border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-/* LOGO */
-
 .footer_logo p{
     margin-top: 25px;
 
@@ -1159,8 +1095,6 @@ html{
 
     max-width: 400px;
 }
-
-/* LINKS */
 
 .footer_links{
     display: flex;
@@ -1193,8 +1127,6 @@ html{
     color: white;
 }
 
-/* BOTTOM */
-
 .footer_bottom{
     padding-top: 40px;
 
@@ -1204,8 +1136,6 @@ html{
 
     gap: 25px;
 }
-
-/* ICONS */
 
 .social_icons{
     display: flex;
@@ -1227,19 +1157,11 @@ html{
     transform: translateY(-3px);
 }
 
-/* COPYRIGHT */
-
 .footer_bottom p{
     color: #94a3b8;
 
     font-size: 18px;
 }
-
-/* ========================= */
-/* RESPONSIVE */
-/* ========================= */
-
-/* MOBILE FOOTER */
 
 @media(max-width:480px){
 
@@ -1254,8 +1176,6 @@ html{
         gap: 25px;
     }
 
-    /* LOGO FULL WIDTH */
-
     .footer_logo{
         grid-column: span 3;
     }
@@ -1268,8 +1188,6 @@ html{
         font-size: 15px;
     }
 
-    /* LINKS */
-
     .footer_links{
         gap: 14px;
     }
@@ -1281,8 +1199,6 @@ html{
     .footer_links a{
         font-size: 14px;
     }
-
-    /* BOTTOM */
 
     .footer_bottom{
         padding-top: 30px;
